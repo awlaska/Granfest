@@ -1,0 +1,13 @@
+Landing Page
+criar conta
+login
+filtrar eventos
+pesquisar eventos
+como contactar
+
+gerir perfil
+categorizar eventos
+partilhar eventos com outros users
+calenderizar eventos
+adicionar notas
+adicionar fotos/bilhetes
