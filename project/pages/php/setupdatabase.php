@@ -24,10 +24,10 @@ echo 'Tabela users created!' . PHP_EOL;
 
 #DEFAULT USER TO ADD
 $user = [
-    'name' => 'Marcelo',
-    'lastname' => 'Antunes Fernandes',
-    'phoneNumber' => '987654321',
-    'email' => 'fernandesmarcelo@estg.ipvc.pt',
+    'name' => 'Ruben',
+    'lastname' => 'Eduardo Ferreira',
+    'phoneNumber' => '976314563',
+    'email' => 'reduardoferreira@ipvc.pt',
     'foto' => null,
     'administrator' => true,
     'password' => '123456'
