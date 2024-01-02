@@ -22,7 +22,7 @@ include_once __DIR__ . '../../../templates/header.php'; ?>
     }
     ?>
   </section>
-  <form action="project\pages\php\pages\public\signup.php" method="post">
+  <form action="project\pages\php\controllers\auth\signup.php" method="post">
     <h1 class="h3 mb-3 fw-normal">Sign Up</h1>
     <div class="form-floating mb-2">
       <input type="text" class="form-control" name="name" placeholder="name" maxlength="100" size="100"
