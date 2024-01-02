@@ -26,8 +26,8 @@ require_once __DIR__ . './setupdatabase.php';
                 <div class="container-fluid py-5 ">
                     <h1 class="display-5 fw-bold">Bem vindo ao Login da Granfest!👋</h1>
                     <div class="d-flex justify-content">
-                        <a href="/crud/pages/public/signin.php"><button class="btn btn-success btn-lg px-5 me-2">Criar Conta</button></a>
-                        <a href="/crud/pages/public/signup.php"><button class="btn btn-info btn-lg px-4">Entrar</button></a>
+                        <a href="/pages/public/signin.php"><button class="btn btn-success btn-lg px-5 me-2">Criar Conta</button></a>
+                        <a href="/pages/public/signup.php"><button class="btn btn-info btn-lg px-4">Entrar</button></a>
                     </div>
                 </div>
             </div>
