@@ -11,10 +11,10 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $signin_username = $_POST['signin_username'];
-    $signin_password = $_POST['signin_password'];
+    $signin_email = $_POST['lemail'];
+    $signin_password = $_POST['lpassword'];
 
-    $query = "SELECT * FROM users WHERE username = '$signin_username'";
+    $query = "SELECT * FROM users WHERE email = '$signin_email";
     $result = $conn->query($query);
 
     if ($result->num_rows > 0) {
