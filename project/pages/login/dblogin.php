@@ -1,20 +1,15 @@
 <?php
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'granfest';
-
-$conn = new mysqli($host, $username, $password, $database);
+$conn = new mysqli('localhost', 'reduardoferreira', '123456', 'granfest');
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $signin_username = $_POST['signin_username'];
-    $signin_password = $_POST['signin_password'];
+    $signin_email = $_POST['email'];
+    $signin_password = $_POST['password'];
 
-    $query = "SELECT * FROM users WHERE username = '$signin_username'";
+    $query = "SELECT * FROM user WHERE email = '$signin_email'";
     $result = $conn->query($query);
 
     if ($result->num_rows > 0) {
