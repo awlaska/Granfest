@@ -13,5 +13,5 @@
 .card-title a:hover {
     color: red;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
 }
