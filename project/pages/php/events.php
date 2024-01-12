@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Bilhetes</title>
-    <link rel="stylesheet" type="text/css" href="project\pages\pagescss\events.css">
+    <link rel="stylesheet" type="text/css" href="/pagescss/events.css">
     <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
 
     <script src='https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
