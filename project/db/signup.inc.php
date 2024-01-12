@@ -2,10 +2,10 @@
 
 if ($_SERVER["REQUEST_METHOD"] === "POST"){
 
-    $name = $_POST[name];
-    $username = $_POST[username];
-    $email = $_POST[email];
-    $password = $_POST[password];
+    $name = $_POST["name"];
+    $username = $_POST["username"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
 
     try{
         require_once 'dbh.inc.php';

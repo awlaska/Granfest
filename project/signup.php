@@ -25,29 +25,29 @@
 
              <!-- Signup Form-->
              <h1 class="fs-6 fw-normal text-center text-secondary mb-4">Regista-te na nossa Plataforma!</h1>
-             <form action="/project/db/signup.inc.php" method="post">
+             <form action="project/db/signup.inc.php" method="post">
                <div class="row gy-2 overflow-hidden">
                 <div class="col-12">
                     <div class="form-floating mb-3">
-                      <input type="fname" class="form-control" name="name" id="name" placeholder="Nome" required>
+                      <input type="fname" class="form-control" name="name" placeholder="Nome" required>
                       <label for="fname" class="form-label">Nome</label>
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-floating mb-3">
-                      <input type="lname" class="form-control" name="username" id="username" placeholder="Username" required>
+                      <input type="lname" class="form-control" name="username" placeholder="Username" required>
                       <label for="lname" class="form-label">Username</label>
                     </div>
                   </div>
                  <div class="col-12">
                    <div class="form-floating mb-3">
-                     <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
+                     <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
                      <label for="email" class="form-label">Email</label>
                    </div>
                  </div>
                  <div class="col-12">
                    <div class="form-floating mb-3">
-                     <input type="password" class="form-control" name="password" id="password" value="" placeholder="Password" required>
+                     <input type="password" class="form-control" name="password" value="" placeholder="Password" required>
                      <label for="password" class="form-label">Password</label>
                    </div>
                  </div>
@@ -66,17 +66,17 @@
                 <br>
              <!--Login Form-->
              <h5 class="fs-6 fw-normal text-center text-secondary mb-4">Faz o Login na tua conta!</h5>
-              <form action="/project/db/login.php" method="get">
+              <form action="/project/db/login.inc.php" method="get">
                 <div class="row gy-2 overflow-hidden">
                   <div class="col-12">
                     <div class="form-floating mb-3">
-                      <input type="email" class="form-control" name="username" id="username" placeholder="Username" required>
+                      <input type="email" class="form-control" name="username" placeholder="Username" required>
                       <label for="email" class="form-label">Username</label>
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-floating mb-3">
-                      <input type="password" class="form-control" name="password" id="password" value="" placeholder="Password" required>
+                      <input type="password" class="form-control" name="password" value="" placeholder="Password" required>
                       <label for="password" class="form-label">Password</label>
                     </div>
                   </div>
