@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <title>Granfest</title>
 
-      <link rel="stylesheet" type="text/css" href="../pagescss/landing.html">
+      <link rel="stylesheet" type="text/css" href="../pagescss/landing.css">
       <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -54,7 +54,7 @@
                 <a class="nav-link" href="project/pages/php/events.php" target="_blank">Bilhetes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="project/pages/login/login.php">Entrar</a>
+                <a class="nav-link" <?php include 'login.php'?>> Entrar</a>
               </li>
               
             </ul>
