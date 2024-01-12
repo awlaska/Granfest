@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <title>Bilhetes</title>
-    <link rel="stylesheet" type="text/css" href="events.css">
+    <link rel="stylesheet" type="text/css" href="/pagescss/events.css">
     <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
 
     <script src='https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 </head>
 <section class="container">
   <h1> 
-    <a href="/project/pages/landing/landing.html">
+    <a href="/project/pages/php/landing.php">
       <img src="/img/logo.jpg" width="100" height="100">
             </a>Bilhetes dos Eventos</h1>
     <br>

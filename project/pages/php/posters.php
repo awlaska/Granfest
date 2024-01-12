@@ -9,7 +9,7 @@
     <section class="bg-light py-4 my-5">
         <div class="container">
             <h1> 
-                <a href="/project/pages/landing/landing.html">
+                <a href="/project/pages/php/landing.php">
                   <img src="/img/logo.jpg" width="100" height="100">
                         </a>Cartazes dos Eventos</h1>
                 <br> 
