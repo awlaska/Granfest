@@ -1,62 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Signup</title>
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-</head>
+<?php
+$host = 'localhost';
+$username = 'root';
+$password = '';
+$database = 'granfest';
 
-<!-- Login 13 - Bootstrap Brain Component -->
-<section class="bg-light py-3 py-md-5">
-   <div class="container">
-     <div class="row justify-content-center">
-       <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
-         <div class="card border border-light-subtle rounded-3 shadow-sm">
-           <div class="card-body p-3 p-md-4 p-xl-5">
-             <div class="text-center mb-3">
-               <a href="/project/pages/landing/landing.php">
-                 <img src="/img/logo.jpg" alt="Granfest Logo" width="150" height="">
-               </a>
-             </div>
-             <h2 class="fs-6 fw-normal text-center text-secondary mb-4">Regista-te na nossa Plataforma!</h2>
-             <form action="/project/pages/signup/conn.php" method="post">
-               <div class="row gy-2 overflow-hidden">
-                <div class="col-12">
-                    <div class="form-floating mb-3">
-                      <input type="fname" class="form-control" name="firstname" id="fname" placeholder="Nome" required>
-                      <label for="fname" class="form-label">Nome</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating mb-3">
-                      <input type="lname" class="form-control" name="lastname" id="lname" placeholder="Apelido" required>
-                      <label for="lname" class="form-label">Apelido</label>
-                    </div>
-                  </div>
-                 <div class="col-12">
-                   <div class="form-floating mb-3">
-                     <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
-                     <label for="email" class="form-label">Email</label>
-                   </div>
-                 </div>
-                 <div class="col-12">
-                   <div class="form-floating mb-3">
-                     <input type="password" class="form-control" name="pwd" id="password" value="" placeholder="Password" required>
-                     <label for="password" class="form-label">Password</label>
-                   </div>
-                 </div>
-                 <div class="col-12">
-                   <div class="d-grid my-3">
-                     <button class="btn btn-primary btn-lg" type="submit">Registar </button>
-                   </div>
-                 </div>
-                 <div class="col-12">
-                   <p class="m-0 text-secondary text-center">Já efetuaste o registo? <a href="/project/pages/login/login.php" class="link-primary text-decoration-none">Login</a></p>
-                 </div>
-               </div>
-             </form>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </section>
+$conn = new mysqli($host, $username, $password, $database);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $signup_fname = $_POST['fname'];
+    $signup_lname = $_POST['lname'];
+    $signup_email = $_POST['upemail'];
+    $signup_password = password_hash($_POST['uppassword'], PASSWORD_DEFAULT);
+
+    $checkQuery = "SELECT * FROM users WHERE email = '$signup_email'";
+    $checkResult = $conn->query($checkQuery);
+
+    if ($checkResult->num_rows > 0) {
+        echo "Email already in use";
+    } else {
+        $insertQuery = "INSERT INTO users (firstname, lastname, email, password) VALUES ('$signup_fname','$signup_lname''$signup_email', '$signup_password')";
+        if ($conn->query($insertQuery) === TRUE) {
+            echo "User registration successful";
+        } else {
+            echo "Error: " . $insertQuery . "<br>" . $conn->error;
+        }
+    }
+}
+
+$conn->close();
+?>
