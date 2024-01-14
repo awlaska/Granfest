@@ -35,7 +35,7 @@
               <span class="icon-menu"></span>
               <span class="icon-menu"></span>
             </button>
-            <a href="landing.html" class="navbar-brand"><img class="logo" src="../../../img/logo.jpg" alt></a>
+            <a href="landing.php" class="navbar-brand"><img class="logo" src="../../../img/logo.jpg" alt></a>
           </div>
           <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
@@ -51,10 +51,10 @@
                 <a class="nav-link" href="#contacts">Contactos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/project/pages/events/events.html" target="_blank">Bilhetes</a>
+                <a class="nav-link" href="../events/events.php">Bilhetes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/project/signup.php">Entrar</a>
+                <a class="nav-link" href="../signup.php">Entrar</a>
               </li>
             </ul>
           </div>
@@ -132,7 +132,7 @@
         <div class="sup-desc-wrap">
         <div class="sup-desc-inner">
         <div class="sup-link">
-        <a class="left-link" href="/project/pages/posters/posters.html" class="#RIR" ><i class="fa fa-link"></i></a>
+        <a class="left-link" href="../posters/posters.php" class="#RIR" ><i class="fa fa-link"></i></a>
         <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
         </div>
         <div class="sup-meta-wrap">
@@ -155,7 +155,7 @@
         <div class="sup-desc-wrap">
         <div class="sup-desc-inner">
         <div class="sup-link">
-        <a class="left-link" href="/project/pages/posters/posters.html" class="#Kalorama"><i class="fa fa-link"></i></a>
+        <a class="left-link" href="../posters/posters.php" class="#Kalorama"><i class="fa fa-link"></i></a>
         <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
         </div>
         <div class="sup-meta-wrap">
@@ -178,7 +178,7 @@
         <div class="sup-desc-wrap">
         <div class="sup-desc-inner">
         <div class="sup-link">
-        <a class="left-link"  href="/project/pages/posters/posters.html" class="#Sudoeste"><i class="fa fa-link"></i></a>
+        <a class="left-link"  href="../posters/posters.php" class="#Sudoeste"><i class="fa fa-link"></i></a>
         <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
         </div>
         <div class="sup-meta-wrap">
@@ -201,7 +201,7 @@
         <div class="sup-desc-wrap">
         <div class="sup-desc-inner">
         <div class="sup-link">
-        <a class="left-link"  href="/project/pages/posters/posters.html" class="#Alive"><i class="fa fa-link"></i></a>
+        <a class="left-link"  href="../posters/posters.php" class="#Alive"><i class="fa fa-link"></i></a>
         <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
         </div>
         <div class="sup-meta-wrap">
@@ -224,7 +224,7 @@
         <div class="sup-desc-wrap">
         <div class="sup-desc-inner">
         <div class="sup-link">
-        <a class="left-link"  href="/project/pages/posters/posters.html" class="#Paredes"><i class="fa fa-link"></i></a>
+        <a class="left-link"  href="../posters/posters.php" class="#Paredes"><i class="fa fa-link"></i></a>
         <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
         </div>
         <div class="sup-meta-wrap">
@@ -247,7 +247,7 @@
         <div class="sup-desc-wrap">
         <div class="sup-desc-inner">
         <div class="sup-link">
-        <a class="left-link"  href="/project/pages/posters/posters.html" class="#SBSR"><i class="fa fa-link"></i></a>
+        <a class="left-link"  href="../posters/posters.php" class="#SBSR"><i class="fa fa-link"></i></a>
         <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
         </div>
         <div class="sup-meta-wrap">
@@ -291,7 +291,7 @@
       </section>
 
       <section id="login" class="section-padding">
-        <a href="/project/pages/login/login.html"></a>
+        <a href="../signup.php"></a>
       </section>
 
       <footer class="footer">

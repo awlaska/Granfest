@@ -9,8 +9,8 @@
 </head>
 <section class="container">
   <h1> 
-    <a href="/project/pages/landing/landing.html">
-      <img src="/img/logo.jpg" width="100" height="100">
+    <a href="../landing/landing.php">
+      <img src="../../../img/logo.jpg" width="100" height="100">
             </a>Bilhetes dos Eventos</h1>
     <br>
       <div class="row">

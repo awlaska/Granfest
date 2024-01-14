@@ -1,6 +1,6 @@
 <?php
-  require_once 'db/signup_view.inc.php';
-  require_once 'db/config_session.inc.php';
+  require_once '../db/signup_view.inc.php';
+  require_once '../db/config_session.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,14 +18,14 @@
          <div class="card border border-light-subtle rounded-3 shadow-sm">
            <div class="card-body p-3 p-md-4 p-xl-5">
              <div class="text-center mb-3">
-               <a href="/project/pages/landing/landing.html">
-                 <img src="/img/logo.jpg" alt="Granfest Logo" width="150" height="">
+               <a href="landing/landing.php">
+                 <img src="../../img/logo.jpg" alt="Granfest Logo" width="150" height="">
                </a>
              </div>
 
              <!-- Signup Form-->
              <h1 class="fs-6 fw-normal text-center text-secondary mb-4">Regista-te na nossa Plataforma!</h1>
-             <form action="project/db/signup.inc.php" method="post">
+             <form action="../db/signup.inc.php" method="post">
                <div class="row gy-2 overflow-hidden">
                 <div class="col-12">
                     <div class="form-floating mb-3">
