@@ -26,41 +26,41 @@
 
     <body>
       <header id="header-wrap">
-
-      <nav style="background-color: #3A2628" class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <div class="container">
-          <div class="navbar-header">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              <span class="icon-menu"></span>
-              <span class="icon-menu"></span>
-              <span class="icon-menu"></span>
-            </button>
-            <a href="landing.php" class="navbar-brand"><img class="logo" src="../../../img/logo.jpg" alt></a>
+        <nav style="background-color: #3A2628" class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+          <div class="container">
+            <div class="navbar-header">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="icon-menu"></span>
+                <span class="icon-menu"></span>
+                <span class="icon-menu"></span>
+              </button>
+              <a href="landing.php" class="navbar-brand"><img class="logo" src="../../../img/logo.jpg" alt></a>
+            </div>
+            <!-- Navbar -->
+            <div class="collapse navbar-collapse" id="main-navbar">
+              <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#sliders">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">Sobre Nós</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Lista de Eventos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacts">Contactos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../events/events.php">Bilhetes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../signup.php">Entrar</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="collapse navbar-collapse" id="main-navbar">
-            <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-              <li class="nav-item active">
-                <a class="nav-link" href="#sliders">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">Sobre Nós</a>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Lista de Eventos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacts">Contactos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../events/events.php">Bilhetes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../signup.php">Entrar</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        </nav>
       </header>
 
       <div id="sliders">
@@ -95,179 +95,170 @@
         </div>
       </div>
  
+      <!-- Filtros -->
       <section id="portfolio" class="section-padding">
 
         <div class="container">
-        <div class="row">
-        <div class="col-md-12">
-        <h2 class="section-title wow fadeInDown animated" data-wow-delay="0.3s">Eventos</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="section-title wow fadeInDown animated" data-wow-delay="0.3s">Eventos</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="controls text-center wow fadeInUpQuick" data-wow-delay=".6s">
+              <a class="filter btn btn-common active" data-filter="all">Todos</a>
+              <a class="filter btn btn-common" data-filter=".norte">Norte</a>
+              <a class="filter btn btn-common" data-filter=".centro">Centro</a>
+              <a class="filter btn btn-common" data-filter=".sul">Sul</a>
+            </div> 
+          </div>
+          
+          <div id="portfolio" class="row wow fadeInUpQuick" data-wow-delay="0.8s">
+            <div class="col-lg-4 col-md-6 col-xs-12 mix centro" style="display: inline-block;" data-bound="">
+              <div class="portfolio-item">
+                <div class="portfolio-img">
+                  <img id="imgbox" src="../../../img/rock_in_rio.png" alt="">
+                </div>
+                <div class="portfoli-content">
+                  <div class="sup-desc-wrap">
+                    <div class="sup-desc-inner">
+                      <div class="sup-link">
+                        <a class="left-link" href="../posters/posters.php" class="#RIR" ><i class="fa fa-link"></i></a>
+                        <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                      </div>
+                      <div class="sup-meta-wrap">
+                        <a class="sup-title" href="#">
+                          <h4>Rock in Rio</h4>
+                        </a>
+                        <p class="sup-description">Lisboa, Lisboa</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 mix centro" style="display: inline-block;" data-bound="">
+              <div class="portfolio-item">
+                <div class="portfolio-img">
+                  <img id="imgbox" src="../../../img/meo_kalorama.jpg" alt="">
+                </div>
+                <div class="portfoli-content">
+                  <div class="sup-desc-wrap">
+                    <div class="sup-desc-inner">
+                      <div class="sup-link">
+                        <a class="left-link" href="../posters/posters.php" class="#Kalorama"><i class="fa fa-link"></i></a>
+                        <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                      </div>
+                      <div class="sup-meta-wrap">
+                        <a class="sup-title" href="#">
+                          <h4>Meo Kalorama</h4>
+                        </a>
+                        <p class="sup-description">Lisboa, Lisboa</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 mix sul" style="display: inline-block;" data-bound="">
+              <div class="portfolio-item">
+                <div class="portfolio-img">
+                  <img id="imgbox" src="../../../img/meo_sudoeste.png" alt="">
+                </div>
+                <div class="portfoli-content">
+                  <div class="sup-desc-wrap">
+                    <div class="sup-desc-inner">
+                      <div class="sup-link">
+                        <a class="left-link"  href="../posters/posters.php" class="#Sudoeste"><i class="fa fa-link"></i></a>
+                        <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                      </div>
+                      <div class="sup-meta-wrap">
+                        <a class="sup-title" href="#">
+                          <h4>Meo Sudoeste</h4>
+                        </a>
+                        <p class="sup-description">São Teotónio, Odemira</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 mix centro" style="display: inline-block;" data-bound="">
+              <div class="portfolio-item">
+                <div class="portfolio-img">
+                  <img id="imgbox" src="../../../img/nos-alive.png" alt="">
+                </div>
+                <div class="portfoli-content">
+                  <div class="sup-desc-wrap">
+                    <div class="sup-desc-inner">
+                      <div class="sup-link">
+                        <a class="left-link"  href="../posters/posters.php" class="#Alive"><i class="fa fa-link"></i></a>
+                        <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                      </div>
+                      <div class="sup-meta-wrap">
+                        <a class="sup-title" href="#">
+                          <h4>Nos Alive</h4>
+                        </a>
+                        <p class="sup-description">Algés, Oeiras</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 mix norte" style="display: inline-block;" data-bound="">
+              <div class="portfolio-item">
+                <div class="portfolio-img">
+                  <img id="imgbox" src="../../../img/vodafone_paredes_de_coura.png" alt="">
+                </div>
+                <div class="portfoli-content">
+                  <div class="sup-desc-wrap">
+                    <div class="sup-desc-inner">
+                      <div class="sup-link">
+                        <a class="left-link"  href="../posters/posters.php" class="#Paredes"><i class="fa fa-link"></i></a>
+                        <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                      </div>
+                      <div class="sup-meta-wrap">
+                        <a class="sup-title" href="#">
+                          <h4>Vodafone Paredes de Coura</h4>
+                        </a>
+                        <p class="sup-description">Paredes de Coura, Viana do Castelo</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 mix centro" style="display: inline-block;" data-bound="">
+              <div class="portfolio-item">
+                <div class="portfolio-img">
+                  <img id="imgbox" class="" src="../../../img/super_rock_super_bock.png" alt="">
+                </div>
+                <div class="portfoli-content">
+                  <div class="sup-desc-wrap">
+                    <div class="sup-desc-inner">
+                      <div class="sup-link">
+                        <a class="left-link"  href="../posters/posters.php" class="#SBSR"><i class="fa fa-link"></i></a>
+                        <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
+                      </div>
+                      <div class="sup-meta-wrap">
+                        <a class="sup-title" href="#">
+                          <h4>Super Bock Super Rock</h4>
+                        </a>
+                        <p class="sup-description">Sesimbra, Setúbal</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         </div>
-        <div class="row">
-        <div class="col-lg-12 col-md-12">
-        
-      <div class="controls text-center wow fadeInUpQuick" data-wow-delay=".6s">
-        <a class="filter btn btn-common active" data-filter="all">
-        Todos
-        </a>
-        <a class="filter btn btn-common" data-filter=".norte">
-        Norte
-        </a>
-        <a class="filter btn btn-common" data-filter=".centro">
-        Centro
-        </a>
-        <a class="filter btn btn-common" data-filter=".sul">
-        Sul
-        </a>
-        </div> 
-        
-        </div>
-        
-        <div id="portfolio" class="row wow fadeInUpQuick" data-wow-delay="0.8s">
-        <div class="col-lg-4 col-md-6 col-xs-12 mix centro" style="display: inline-block;" data-bound="">
-        <div class="portfolio-item">
-        <div class="portfolio-img">
-        <img id="imgbox" src="../../../img/rock_in_rio.png" alt="">
-        </div>
-        <div class="portfoli-content">
-        <div class="sup-desc-wrap">
-        <div class="sup-desc-inner">
-        <div class="sup-link">
-        <a class="left-link" href="../posters/posters.php" class="#RIR" ><i class="fa fa-link"></i></a>
-        <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-        </div>
-        <div class="sup-meta-wrap">
-        <a class="sup-title" href="#">
-        <h4>Rock in Rio</h4>
-        </a>
-        <p class="sup-description">Lisboa, Lisboa</p>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12 mix centro" style="display: inline-block;" data-bound="">
-        <div class="portfolio-item">
-        <div class="portfolio-img">
-        <img id="imgbox" src="../../../img/meo_kalorama.jpg" alt="">
-        </div>
-        <div class="portfoli-content">
-        <div class="sup-desc-wrap">
-        <div class="sup-desc-inner">
-        <div class="sup-link">
-        <a class="left-link" href="../posters/posters.php" class="#Kalorama"><i class="fa fa-link"></i></a>
-        <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-        </div>
-        <div class="sup-meta-wrap">
-        <a class="sup-title" href="#">
-        <h4>Meo Kalorama</h4>
-        </a>
-        <p class="sup-description">Lisboa, Lisboa</p>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12 mix sul" style="display: inline-block;" data-bound="">
-        <div class="portfolio-item">
-        <div class="portfolio-img">
-        <img id="imgbox" src="../../../img/meo_sudoeste.png" alt="">
-        </div>
-        <div class="portfoli-content">
-        <div class="sup-desc-wrap">
-        <div class="sup-desc-inner">
-        <div class="sup-link">
-        <a class="left-link"  href="../posters/posters.php" class="#Sudoeste"><i class="fa fa-link"></i></a>
-        <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-        </div>
-        <div class="sup-meta-wrap">
-        <a class="sup-title" href="#">
-        <h4>Meo Sudoeste</h4>
-        </a>
-        <p class="sup-description">São Teotónio, Odemira</p>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12 mix centro" style="display: inline-block;" data-bound="">
-        <div class="portfolio-item">
-        <div class="portfolio-img">
-        <img id="imgbox" src="../../../img/nos-alive.png" alt="">
-        </div>
-        <div class="portfoli-content">
-        <div class="sup-desc-wrap">
-        <div class="sup-desc-inner">
-        <div class="sup-link">
-        <a class="left-link"  href="../posters/posters.php" class="#Alive"><i class="fa fa-link"></i></a>
-        <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-        </div>
-        <div class="sup-meta-wrap">
-        <a class="sup-title" href="#">
-        <h4>Nos Alive</h4>
-        </a>
-        <p class="sup-description">Algés, Oeiras</p>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12 mix norte" style="display: inline-block;" data-bound="">
-        <div class="portfolio-item">
-        <div class="portfolio-img">
-        <img id="imgbox" src="../../../img/vodafone_paredes_de_coura.png" alt="">
-        </div>
-        <div class="portfoli-content">
-        <div class="sup-desc-wrap">
-        <div class="sup-desc-inner">
-        <div class="sup-link">
-        <a class="left-link"  href="../posters/posters.php" class="#Paredes"><i class="fa fa-link"></i></a>
-        <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-        </div>
-        <div class="sup-meta-wrap">
-        <a class="sup-title" href="#">
-        <h4>Vodafone Paredes de Coura</h4>
-        </a>
-        <p class="sup-description">Paredes de Coura, Viana do Castelo</p>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12 mix centro" style="display: inline-block;" data-bound="">
-        <div class="portfolio-item">
-        <div class="portfolio-img">
-        <img id="imgbox" class="" src="../../../img/super_rock_super_bock.png" alt="">
-        </div>
-        <div class="portfoli-content">
-        <div class="sup-desc-wrap">
-        <div class="sup-desc-inner">
-        <div class="sup-link">
-        <a class="left-link"  href="../posters/posters.php" class="#SBSR"><i class="fa fa-link"></i></a>
-        <a class="right-link" href="#"><i class="fa fa-heart"></i></a>
-        </div>
-        <div class="sup-meta-wrap">
-        <a class="sup-title" href="#">
-        <h4>Super Bock Super Rock</h4>
-        </a>
-        <p class="sup-description">Sesimbra, Setúbal</p>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        
-        </section>
+      </section>
 
+      <!-- Contactos -->
       <section id="contacts" class="contact-form section-padding">
         <div class="container">
           <div class="row">
@@ -295,6 +286,7 @@
         <a href="../signup.php"></a>
       </section>
 
+      <!-- Sobre nós -->
       <footer class="footer">
         <div class="container">
           <div class="row section">
@@ -311,31 +303,25 @@
               </ul>
             </div>
 
-
-          <div class="footer-widget col-lg-3 col-md-6 col-xs-12 wow fadeIn" data-wow-delay=".5s">
-          <h3 class="small-title">
-          Galeria
-          </h3>
-          <div class="plain-flicker-gallery">
-          <a href="#"><img src="../../..\img\alive.webp" alt></a>
-          <a href="#"><img src="../../..\img\kalorama.webp" alt></a>
-          <a href="#"><img src="../../..\img\meosw.jpg" alt></a>
-          <a href="#"><img src="../../..\img\paredes.jpg" alt></a>
-          <a href="#"><img src="../../..\img\rockinrio.jpg" alt></a>
-          <a href="#"><img src="../../..\img\sbsr.webp" alt></a>
+            <div class="footer-widget col-lg-3 col-md-6 col-xs-12 wow fadeIn" data-wow-delay=".5s">
+              <h3 class="small-title">
+                Galeria
+              </h3>
+              <div class="plain-flicker-gallery">
+                <a href="#"><img src="../../..\img\alive.webp" alt></a>
+                <a href="#"><img src="../../..\img\kalorama.webp" alt></a>
+                <a href="#"><img src="../../..\img\meosw.jpg" alt></a>
+                <a href="#"><img src="../../..\img\paredes.jpg" alt></a>
+                <a href="#"><img src="../../..\img\rockinrio.jpg" alt></a>
+                <a href="#"><img src="../../..\img\sbsr.webp" alt></a>
+              </div>
+            </div>
           </div>
-          </div>
-          </div>
-
 
           <div id="copyright" class="container row col-lg-6 col-md-6 col-xs-12">
             <p class="copyright-text">Ruben e Sofia - SIR 2023/2024
             </p>
           </div>
-      </footer>
-
-
-
-    
+      </footer>    
     </body>
 </html>

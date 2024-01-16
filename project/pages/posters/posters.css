@@ -1,8 +1,10 @@
+/* Estilo para um elemento com class .card-img-top */
 .card-img-top {
     max-height: 250px;
     overflow: hidden;
 }
 
+/* Estilo para um link não visitado de elementos com a classe .card-title */
 .card-title a:link {
     font-size: 30px;
     background-color: transparent;
@@ -10,6 +12,7 @@
     text-decoration: none;
 }
 
+/* Estilo para um link quando estão no estado hover de elementos com a classe .card-title */
 .card-title a:hover {
     color: red;
     background-color: transparent;
