@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
          $_SESSION["user_username"] = htmlspecialchars($result["username"]);
          $_SESSION["last_regeneration"] = time();
 
-         header("Location: ../pages/landing/landing.php?login=success");
+         header("Location:  ../pages/signup.php?login=success");
          $pdo=null;
          $stmt=null;
          die();
