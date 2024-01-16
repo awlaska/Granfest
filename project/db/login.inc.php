@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
          // ERROR HANDLERS
          $errors= [];
 
-         if(is_input_empty( $username, $pwd) ){
+         if(is_input_empty( $username, $pwd)){
              $errors["empty_input"]= "Fill in all fields!";
          }
 
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
          if($errors){
              $_SESSION["errors_login"] = $errors;
             
-             header("Location: ../signup.php");
+             header("Location: ../pages/signup.php");
             die(); 
          }
          
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
          $_SESSION["user_username"] = htmlspecialchars($result["username"]);
          $_SESSION["last_regeneration"] = time();
 
-         header("Location: ../signup.php?login=success");
+         header("Location: ../pages/signup.php?login=success");
          $pdo=null;
          $stmt=null;
          die();
@@ -52,6 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
     }   
 }
 else{
-    header("Location: ../signup.php");
+    header("Location: ../pages/signup.php");
     die();
 }

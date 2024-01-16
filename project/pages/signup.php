@@ -59,10 +59,10 @@
                  </div>
                </div>
              </form>
-
              <?php
                 check_signup_errors();
              ?>
+        
                 <br>
                 <br>
 

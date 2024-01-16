@@ -40,14 +40,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
 
         if($errors){
             $_SESSION["errors_signup"] = $errors;
-            header("Location: ../signup.php");
+            header("Location: ../pages/signup.php");
             die();
 
         }
 
         create_user( $pdo,  $pwd,  $username,  $email);
 
-        header("Location: ../signup.php?signup=success");
+        header("Location: ../pages/signup.php?signup=success");
         $pdo = null;
         $stmt = null;
         die();
@@ -56,6 +56,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
         die("Query Failed: " .$e->getMessage());  
         }
 }else {
-        header("Location: ../signup.php");
+        header("Location: ../pages/signup.php");
         die();
 }
