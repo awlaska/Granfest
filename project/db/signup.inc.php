@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
     $name = $_POST["name"];
     $username = $_POST["username"];
     $email = $_POST["email"];
-    $password = $_POST["password"];
+    $pwd = $_POST["pwd"];
 
     try{
         require_once 'dbh.inc.php';
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
         // ERROR HANDLERS
         $errors= [];
 
-        if(is_input_empty($name, $username, $email, $password) ){
+        if(is_input_empty($name, $username, $email, $pwd) ){
             $errors["empty_input"]= "Fill in all fields!";
 
         }
@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
 
         }
 
-        create_user( $pdo,  $password,  $username,  $email);
+        create_user( $pdo,  $pwd,  $username,  $email);
 
         header("Location: ../signup.php?signup=success");
         $pdo = null;

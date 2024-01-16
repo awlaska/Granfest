@@ -70,8 +70,8 @@
                 <div class="row gy-2 overflow-hidden">
                   <div class="col-12">
                     <div class="form-floating mb-3">
-                      <input type="email" class="form-control" name="username" placeholder="Username" required>
-                      <label for="email" class="form-label">Username</label>
+                      <input type="username" class="form-control" name="username" placeholder="Username" required>
+                      <label for="username" class="form-label">Username</label>
                     </div>
                   </div>
                   <div class="col-12">

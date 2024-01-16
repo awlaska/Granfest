@@ -1,11 +1,12 @@
 <?php 
 $host = 'localhost';
 $dbname = 'granfest';
-$dbusername = 'root';
-$dbpassword = '';
+$dbusername = 'six';
+$dbpassword = 'TeRMLSz58WCa';
 
 try{
-    $pdo = new PDO("mysql:host=$host; dbname=$dbname", $dbusername, $dbpassword);
+    $dsn = "mysql:host=$host; port= 3308; dbname=$dbname;charset=utf8";
+    $pdo = new PDO($dsn, $dbusername, $dbpassword);    
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 } catch(PDOException $e){
