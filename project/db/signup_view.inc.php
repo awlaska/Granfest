@@ -1,7 +1,8 @@
 <?php
-
+# Ativa o modo estrito para o arquivo PHP
 declare(strict_types=1);
 
+# Verifica se a variável "errors_signup" está definida. Se estiver, assume que ocorreram erros no processo de signup
 function check_signup_errors(){
     if(isset($_SESSION['errors_signup'])){
         $errors = $_SESSION['errors_signup'];
