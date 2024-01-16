@@ -68,11 +68,11 @@
 
              <!--Login Form-->
              <h5 class="fs-6 fw-normal text-center text-secondary mb-4">Faz o Login na tua conta!</h5>
-             <h3>
+             <h6>
                 <?php
                  output_username()
                 ?>
-             </h3>
+             </h6>
               <form action="../db/login.inc.php" method="post">
                 <div class="row gy-2 overflow-hidden">
                   <div class="col-12">
@@ -99,7 +99,6 @@
               ?>
         
               <!--Logout Form-->
-             <h5 class="fs-6 fw-normal text-center text-secondary mb-4">Faz o Login na tua conta!</h5>
               <form action="../db/logout.inc.php" method="post">
                 <div class="row gy-2 overflow-hidden">
                   <div class="col-12">
