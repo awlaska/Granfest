@@ -72,21 +72,21 @@
             <div class="col-lg-4 col-md-6 col-xs-12">
               <div class="about block text-center">
               <img src="../../../img/diversidade.png" alt>
-              <h5><a href="#">Diversidade</a></h5>
+              <h5>Diversidade</h5>
               <p>Temos todo o tipo de festivais</p>
               </div>
             </div>
             <div class="col-lg-4 col-md-6 col-xs-12">
               <div class="about block text-center">
               <img src="../../../img/seguranca.png" alt>
-              <h5><a href="#">Segurança</a></h5>
+              <h5>Segurança</h5>
               <p>A sua segurança na compra dos bilhetes é o mais importante</p>
               </div>
             </div>
             <div class="col-lg-4 col-md-12 col-xs-12">
               <div class="about block text-center">
               <img src="../../../img/expansao.svg" alt>
-              <h5><a href="#">Expansão</a></h5>
+              <h5>Expansão</h5>
               <p>A nossa expansão para outros tipos de entretenimento, por exemplo teatro, está a caminho</p>
               </div>
             </div>
