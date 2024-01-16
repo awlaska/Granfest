@@ -1,7 +1,7 @@
 <?php 
 $host = 'localhost'; # O host onde a BD está localizada
 $dbname = 'granfest'; # O nome da BD
-$dbusername = 'root'; # O user que será usado para entrar na BD
+$dbusername = 'root'; # O username que será usado para entrar na BD
 $dbpassword = ''; # A password que será usada para entrar na BD
 
 try{
