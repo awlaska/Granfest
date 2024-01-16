@@ -1,6 +1,7 @@
 <?php
   require_once '../db/signup_view.inc.php';
   require_once '../db/config_session.inc.php';
+  require_once '../db/login_view.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -64,9 +65,15 @@
              ?>
                 <br>
                 <br>
+
              <!--Login Form-->
              <h5 class="fs-6 fw-normal text-center text-secondary mb-4">Faz o Login na tua conta!</h5>
-              <form action="/project/db/login.inc.php" method="get">
+             <h3>
+                <?php
+                 output_username()
+                ?>
+             </h3>
+              <form action="/project/db/login.inc.php" method="post">
                 <div class="row gy-2 overflow-hidden">
                   <div class="col-12">
                     <div class="form-floating mb-3">
@@ -83,6 +90,22 @@
                     <div class="col-12">
                     <div class="d-grid my-3">
                       <button class="btn btn-primary btn-lg" type="submit">Log in</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <?php
+               check_login_errors();
+              ?>
+        
+              <!--Logout Form-->
+             <h5 class="fs-6 fw-normal text-center text-secondary mb-4">Faz o Login na tua conta!</h5>
+              <form action="/project/db/logout.inc.php" method="post">
+                <div class="row gy-2 overflow-hidden">
+                  <div class="col-12">
+                    <div class="col-12">
+                    <div class="d-grid my-3">
+                      <button class="btn btn-primary btn-lg" type="submit">Logout</button>
                     </div>
                   </div>
                 </div>
