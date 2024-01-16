@@ -1,8 +1,8 @@
 <?php 
 $host = 'localhost';
 $dbname = 'granfest';
-$dbusername = 'six';
-$dbpassword = 'TeRMLSz58WCa';
+$dbusername = 'root';
+$dbpassword = '';
 
 try{
     $dsn = "mysql:host=$host; port= 3308; dbname=$dbname;charset=utf8";

@@ -47,7 +47,7 @@
                  </div>
                  <div class="col-12">
                    <div class="form-floating mb-3">
-                     <input type="password" class="form-control" name="password" value="" placeholder="Password" required>
+                     <input type="password" class="form-control" name="pwd" value="" placeholder="Password" required>
                      <label for="password" class="form-label">Password</label>
                    </div>
                  </div>
