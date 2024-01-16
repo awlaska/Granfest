@@ -73,7 +73,7 @@
                  output_username()
                 ?>
              </h3>
-              <form action="/project/db/login.inc.php" method="post">
+              <form action="../db/login.inc.php" method="post">
                 <div class="row gy-2 overflow-hidden">
                   <div class="col-12">
                     <div class="form-floating mb-3">
@@ -100,7 +100,7 @@
         
               <!--Logout Form-->
              <h5 class="fs-6 fw-normal text-center text-secondary mb-4">Faz o Login na tua conta!</h5>
-              <form action="/project/db/logout.inc.php" method="post">
+              <form action="../db/logout.inc.php" method="post">
                 <div class="row gy-2 overflow-hidden">
                   <div class="col-12">
                     <div class="col-12">
