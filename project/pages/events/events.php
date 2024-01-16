@@ -4,7 +4,7 @@
     <title>Bilhetes</title>
     <link rel="stylesheet" type="text/css" href="events.css">
     <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-    <link rel="icon" href="../../img/favicon.ico"> 
+    <link rel="icon" href="../../../img/favicon.ico"> 
 
     <script src='https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 </head>

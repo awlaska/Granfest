@@ -21,7 +21,7 @@
       <link rel="stylesheet" type="text/css" href="../css/extras.css">
 
       <link rel="stylesheet" type="text/css" href="../css/responsive.css">
-      <link rel="icon" href="../../img/favicon.ico"> 
+      <link rel="icon" href="../../../img/favicon.ico"> 
     </head>
 
     <body>
