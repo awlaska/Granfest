@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-function is_input_empty( string $name, string $username, string $email, string $password){
-    if(empty($name) || empty($username) || empty($email) || empty($password)){
+function is_input_empty( string $name, string $username, string $email, string $pwd){
+    if(empty($name) || empty($username) || empty($email) || empty($pwd)){
         return true;
     }
     else{
@@ -32,6 +32,9 @@ function is_username_taken(object $pdo, string $username){
 
 }
 
+function create_user(object $pdo, string $pwd, string $username, string $email){
+    set_user( $pdo,  $pwd,  $username,  $email);
+}
 function is_email_registered(object $pdo, string $email){
     if(get_email( $pdo, $email)){
         return true;
