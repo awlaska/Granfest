@@ -9,6 +9,7 @@
 <head>
   <title>Signup</title>
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="icon" href="../../img/favicon.ico"> 
 </head>
 
 <!-- Login 13 - Bootstrap Brain Component -->

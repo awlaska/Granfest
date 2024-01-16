@@ -4,6 +4,7 @@
         <title>Cartazes</title>
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link rel="icon" href="../../img/favicon.ico"> 
     </head>
 
     <section class="bg-light py-4 my-5">
