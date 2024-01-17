@@ -18,7 +18,6 @@ function is_username_wrong(bool|array $result){
     } else {
     return false;
     }
-
 }
 
 # Verifica se a password está correta
@@ -28,7 +27,6 @@ function is_password_wrong(string $pwd, string $hashedPwd){
     } else {
     return false;
     }
-
 }
 
 
