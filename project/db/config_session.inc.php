@@ -20,7 +20,6 @@ session_set_cookie_params([
 
 # Inicia sessão
 session_start();
-about:blank #blocked
 # Determina se a sessão está ativa ou não
 if(isset($_SESSION['user_id'])) {
     if(!isset($_SESSION['last_regeneration'])) {
