@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
         $_SESSION["last_regeneration"] = time();
 
         # Redirecionamento em caso de sucesso
-        header("Location:  ../pages/signup.php?login=success");
+        header("Location:  ../pages/landing/landing.php?login=success");
         $pdo=null;
         $stmt=null;
         die();
