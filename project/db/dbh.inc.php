@@ -16,3 +16,4 @@ try{
     die("Falha na conexão à BD:" .$e->getMessage());
 
 }
+?>

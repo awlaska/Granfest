@@ -65,3 +65,4 @@ else{
     header("Location: ../pages/signup.php");
     die();
 }
+?>

@@ -25,17 +25,19 @@ function get_email(object $pdo, string $email){
 }
 
 # Insere um novo utilizador na BD, usando um Prepared Statement
-function set_user(object $pdo, string $pwd, string $username, string $email){
-    $query = "INSERT into users(username, pwd, email) VALUES (:username, :pwd, :email); ";
+function set_user(object $pdo, string $uname, string $pwd, string $username, string $email){
+    $query = "INSERT into users(nome, username, pwd, email) VALUES (:nome, :username, :pwd, :email); ";
     $stmt = $pdo->prepare($query);
 
     $options = [ 
         'cost' => 12 ];
     
     $hashedPwd = password_hash($pwd, PASSWORD_BCRYPT, $options);
+    $stmt->bindParam(":uname", $uname);
     $stmt->bindParam(":username", $username);
     $stmt->bindParam(":pwd", $hashedPwd);
     $stmt->bindParam(":email", $email);
     $stmt->execute();
 
 }
+?>

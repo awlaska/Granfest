@@ -1,0 +1,15 @@
+y Landing Page
+y criar conta
+y login
+n filtrar eventos
+n pesquisar eventos
+y como contactar
+
+n gerir perfil
+n categorizar eventos
+n partilhar eventos com outros users
+n calenderizar eventos
+n adicionar notas
+n adicionar fotos/bilhetes
+
+n aparece botao de editar só se for admin nos bilhetes

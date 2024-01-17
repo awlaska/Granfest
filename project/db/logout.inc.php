@@ -10,3 +10,4 @@ session_destroy();
 # Redireciona para a pagina principal
 header("Location: ../pages/landing/landing.php");
 die();
+?>

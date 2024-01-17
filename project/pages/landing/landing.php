@@ -55,6 +55,7 @@
                   <a class="nav-link" href="../events/events.php">Bilhetes</a>
                 </li>
                 <li class="nav-item">
+                <!-- <a class="nav-link" href="../signup.php">Entrar</a> -->
                   <?php
                     if(isset($_SESSION["user_id"])) {
                         // User is logged in, display username

@@ -1,5 +1,4 @@
 <?php 
-
 # Garante que as sessões serão mantidas só com cookies e em modo restrito
 ini_set('session.use_only_cookies', 1);
 ini_set('session.use_strict_mode', 1);
@@ -69,3 +68,4 @@ function regenerate_session_id_logged_in(){
     session_id($sessionId);
     $_SESSION["last_regeneration"] = time(); #Quando foi a ultima vez que atualizamos o session_id
 }
+?>
