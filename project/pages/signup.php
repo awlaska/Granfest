@@ -71,7 +71,7 @@
              <h5 class="fs-6 fw-normal text-center text-secondary mb-4">Faz o Login na tua conta!</h5>
              <h6>
                 <?php
-                 output_username()
+                 output_username();
                 ?>
              </h6>
               <form action="../db/login.inc.php" method="post">
