@@ -26,7 +26,7 @@ function get_email(object $pdo, string $email){
 
 # Insere um novo utilizador na BD, usando um Prepared Statement
 function set_user(object $pdo, string $uname, string $pwd, string $username, string $email){
-    $query = "INSERT into users(nome, username, pwd, email) VALUES (:nome, :username, :pwd, :email); ";
+    $query = "INSERT into users(uname, username, pwd, email) VALUES (:uname, :username, :pwd, :email); ";
     $stmt = $pdo->prepare($query);
 
     $options = [ 

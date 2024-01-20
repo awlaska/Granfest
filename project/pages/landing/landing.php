@@ -1,3 +1,8 @@
+<?php
+  require_once '../../db/signup_view.inc.php';
+  require_once '../../db/config_session.inc.php';
+  require_once '../../db/login_view.inc.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -59,11 +64,12 @@
                   <?php
                     if(isset($_SESSION["user_id"])) {
                         // User is logged in, display username
-                        echo '<a class="nav-link" href="#">' . $_SESSION["user_username"] . '</a>';
+                        echo '<a class="nav-link" href="#">' . output_username() . '</a>';
                     } else {
                         // User is not logged in, display login link
                         echo '<a class="nav-link" href="../signup.php">Entrar</a>';
                     }
+                    output_username()
                   ?>
                 </li>
               </ul>

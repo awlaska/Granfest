@@ -5,9 +5,9 @@ declare(strict_types= 1);
 # Verifica se a variável se sessão "user_id" está definida, o que significa que o utilizador está logado
 function output_username(){
     if(isset($_SESSION['user_id'])){
-        echo"Estás logado como " . $_SESSION["user_username"];
+        echo$_SESSION["user_username"];
     }else{
-    echo"Não estás logado!";
+        echo"Não estás logado!";
     }
 }
 
