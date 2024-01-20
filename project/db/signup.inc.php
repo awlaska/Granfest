@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
         create_user( $pdo, $uname, $pwd,  $username,  $email);
 
         # Redirecionamento em caso de sucesso
-        header("Location: ../pages/landing/landing.php");
+        header("Location: ../pages/login.php");
         $pdo = null;
         $stmt = null;
         die();

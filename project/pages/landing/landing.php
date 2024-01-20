@@ -62,9 +62,9 @@
                 <li class="nav-item">
                 <!-- <a class="nav-link" href="../signup.php">Entrar</a> -->
                   <?php
-                    if(isset($_SESSION["user_id"])) {
+                    if(isset($_SESSION["user_username"])) {
                         // User is logged in, display username
-                        echo '<a class="nav-link" href="#">' . output_username() . '</a>';
+                        echo '<a class="nav-link" href="../../db/logout.inc.php"> Logout </a>';
                     } else {
                         // User is not logged in, display login link
                         echo '<a class="nav-link" href="../login.php">Entrar</a>';
