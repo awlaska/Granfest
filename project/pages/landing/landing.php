@@ -67,7 +67,7 @@
                         echo '<a class="nav-link" href="#">' . output_username() . '</a>';
                     } else {
                         // User is not logged in, display login link
-                        echo '<a class="nav-link" href="../signup.php">Entrar</a>';
+                        echo '<a class="nav-link" href="../login.php">Entrar</a>';
                     }
                     output_username()
                   ?>

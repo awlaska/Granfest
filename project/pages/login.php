@@ -45,6 +45,8 @@
                     <div class="d-grid my-3">
                       <button class="btn btn-primary btn-lg" type="submit">Log in</button>
                     </div>
+                  <div>
+                  <a class="nav-link" href="signup.php">Não tens conta? Regista-te aqui!</a>
                   </div>
                 </div>
               </form>
