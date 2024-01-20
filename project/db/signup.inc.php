@@ -3,7 +3,7 @@
 if ($_SERVER["REQUEST_METHOD"] === "POST"){
     # Código para processar dados do formulário quando a requisição é do tipo POST
     # Obtém os dados a partir do método POST
-    $name = $_POST["name"];
+    $nome = $_POST["name"];
     $username = $_POST["username"];
     $email = $_POST["email"];
     $pwd = $_POST["pwd"];
@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
         // Valida erros
         $errors= [];
 
-        if(is_input_empty($name, $username, $email, $pwd) ){
+        if(is_input_empty($nome, $username, $email, $pwd) ){
             $errors["empty_input"]= "Fill in all fields!";
         }
         
@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
         }
 
         # Cria um utilizador
-        create_user( $pdo,  $pwd,  $username,  $email);
+        create_user( $pdo, $nome, $pwd,  $username,  $email);
 
         # Redirecionamento em caso de sucesso
         header("Location: ../pages/signup.php?signup=success");

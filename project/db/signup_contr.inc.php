@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 # Verifica se o que o utilizador introduziu no login está preenchido
-function is_input_empty( string $uname, string $username, string $email, string $pwd){
-    if(empty($uname) || empty($username) || empty($email) || empty($pwd)){
+function is_input_empty( string $nome, string $username, string $email, string $pwd){
+    if(empty($nome) || empty($username) || empty($email) || empty($pwd)){
         return true;
     }
     else{
@@ -33,8 +33,8 @@ function is_username_taken(object $pdo, string $username){
 }
 
 # Cria um novo utilizador na BD
-function create_user(object $pdo, string $uname, string $pwd, string $username, string $email){
-    set_user( $pdo, $uname, $pwd,  $username,  $email);
+function create_user(object $pdo, string $nome, string $pwd, string $username, string $email){
+    set_user( $pdo, $nome, $pwd,  $username,  $email);
 }
 
 # Verifica se existe algum email já existente igual ao que o utilizador introduziu
