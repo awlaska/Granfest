@@ -60,16 +60,14 @@
                   <a class="nav-link" href="../events/events.php">Bilhetes</a>
                 </li>
                 <li class="nav-item">
-                <!-- <a class="nav-link" href="../signup.php">Entrar</a> -->
                   <?php
                     if(isset($_SESSION["user_username"])) {
                         // User is logged in, display username
-                        echo '<a class="nav-link" href="../../db/logout.inc.php"> Logout </a>';
+                        echo '<a class="nav-link" href="../perfil/perfil.php">' . $_SESSION["user_username"] . '</a>';
                     } else {
                         // User is not logged in, display login link
                         echo '<a class="nav-link" href="../login.php">Entrar</a>';
                     }
-                    output_username()
                   ?>
                 </li>
               </ul>

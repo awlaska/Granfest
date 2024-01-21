@@ -34,7 +34,7 @@ function is_username_taken(object $pdo, string $username){
 
 # Cria um novo utilizador na BD
 function create_user(object $pdo, string $uname, string $pwd, string $username, string $email){
-    set_user( $pdo, $uname, $pwd,  $username,  $email);
+    set_user( $pdo, $uname, $pwd,  $username,  $email, 0);
 }
 
 # Verifica se existe algum email já existente igual ao que o utilizador introduziu
