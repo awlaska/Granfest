@@ -46,13 +46,15 @@
                     <div class="col-12">
                       <div class="form-floating mb-3">
                         Email
-                        <input type="email" class="form-control" name="email" value="<?php echo isset($_SESSION['user_username']) ? get_info('email', 'users', 'username', $_SESSION['user_username']) : 'None'; ?>" placeholder="Email">
+                        <input type="email" class="form-control" name="email" placeholder="Email">
+                        <!-- <php echo isset($_SESSION['user_username']) ? htmlspecialchars(get_info('email', 'users', 'username', $_SESSION['user_username'])) : 'None'; ?> -->
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="form-floating mb-3">
                         Password
-                        <input type="password" class="form-control" name="pwd" value="<?php echo isset($_SESSION['user_username']) ? get_info('pwd', 'users', 'username', $_SESSION['user_username']) : 'None'; ?>" placeholder="Password">
+                        <input type="password" class="form-control" name="pwd" placeholder="Password">
+                        <!-- value="<php echo isset($_SESSION['user_username']) ? get_info('pwd', 'users', 'username', $_SESSION['user_username']) : 'None'; ?>" -->
                       </div>
                     </div>
                     <!--  -->
