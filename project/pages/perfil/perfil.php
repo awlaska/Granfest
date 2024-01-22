@@ -28,6 +28,7 @@
               </div>
               <form action="../db/login_model.inc.php" method="post">
               <h1 class="fs-6 fw-normal text-center text-secondary mb-4">Perfil</h1>
+              <h1 class="fs-6 fw-normal text-center text-secondary mb-4">Introduz novos dados para atualizares o teu perfil: </h1>
                 <div class="row gy-2 overflow-hidden">
                   <div class="col-12">
                     <div class="form-floating mb-3">
@@ -58,6 +59,15 @@
                       <button class="btn btn-primary btn-lg" type="submit">Atualizar</button>
                     </div>
                   </div>
+                 <!--Logout Form-->
+                 <form action="../db/logout.inc.php" method="post">
+                  <div class="row gy-2 overflow-hidden">
+                    <div class="d-grid my-3">
+                      <button class="btn btn-primary btn-lg" type="submit">Logout</button>
+                    </div>
+                    </div>
+                  </div>
+                </form>
                 </div>
               </form>
             </div>
