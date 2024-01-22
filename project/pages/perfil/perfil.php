@@ -63,17 +63,10 @@
                         <button class="btn btn-primary btn-lg" type="submit">Atualizar</button>
                       </div>
                     </div>
-                  <!--Logout Form-->
-                  <form action="../db/logout.inc.php" method="post">
-                    <div class="row gy-2 overflow-hidden">
-                      <div class="d-grid my-3">
-                        <button class="btn btn-primary btn-lg" type="submit">Logout</button>
-                      </div>
-                      </div>
                     </div>
                   </form>
+                  <a href="../../db/logout.inc.php">Logout</a>
                   </div>
-                </form>
               </div>
           </div>
         </div>
