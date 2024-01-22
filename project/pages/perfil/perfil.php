@@ -11,7 +11,7 @@
   <title>Perfil</title>
   <link rel="stylesheet" href="perfil.css">
   <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="icon" href="../img/favicon.ico"> 
+  <link rel="icon" href="../../../img/favicon.ico"> 
 </head>
 
 <body>
