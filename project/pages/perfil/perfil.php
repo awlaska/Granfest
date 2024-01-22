@@ -63,8 +63,8 @@
                         <button class="btn btn-primary btn-lg" type="submit">Atualizar</button>
                       </div>
                     </div>
-                    </div>
-                  </form>
+                  </div>
+                </form>
                   <a href="../../db/logout.inc.php">Logout</a>
                   </div>
               </div>
