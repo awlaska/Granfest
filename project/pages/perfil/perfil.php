@@ -1,5 +1,5 @@
 <?php
-  require_once '../../atualizar_perfil.php';
+  require_once '../../db/atualizar_info.php';
   require_once '../../db/signup_view.inc.php';
   require_once '../../db/config_session.inc.php';
   require_once '../../db/login_view.inc.php';
@@ -32,8 +32,7 @@
                   <div class="col-12">
                     <div class="form-floating mb-3">
                       Nome
-                      <?php echo get_name($pdo, $_SESSION['user_username'])?>
-                      <input type="fname" class="form-control" name="name" value="<?php echo get_name($pdo, $_SESSION['user_username'])?>" placeholder="Nome">
+                      <input type="fname" class="form-control" name="name" value="<?php echo isset($_SESSION['user_username']) ? get_info('uname', 'users', 'username', $_SESSION['user_username']) : 'None';?>" placeholder="Nome">
                     </div>
                   </div>
                   <div class="col-12">
@@ -45,13 +44,13 @@
                   <div class="col-12">
                     <div class="form-floating mb-3">
                       Email
-                      <input type="email" class="form-control" name="email" value="<?php echo isset($_SESSION['email']) ? $_SESSION['email'] : 'None'; ?>" placeholder="Email">
+                      <input type="email" class="form-control" name="email" value="<?php echo isset($_SESSION['user_username']) ? get_info('email', 'users', 'username', $_SESSION['user_username']) : 'None'; ?>" placeholder="Email">
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-floating mb-3">
                       Password
-                      <input type="password" class="form-control" name="pwd" value="<?php echo isset($_SESSION['pwd']) ? $_SESSION['pwd'] : 'None'; ?>" placeholder="Password">
+                      <input type="password" class="form-control" name="pwd" value="<?php echo isset($_SESSION['user_username']) ? get_info('pwd', 'users', 'username', $_SESSION['user_username']) : 'None'; ?>" placeholder="Password">
                     </div>
                   </div>
                   <div class="col-12">
