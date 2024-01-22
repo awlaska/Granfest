@@ -1,9 +1,17 @@
+<?php
+  require_once '../../atualizar_perfil.php';
+  require_once '../../db/signup_view.inc.php';
+  require_once '../../db/config_session.inc.php';
+  require_once '../../db/login_view.inc.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Perfil</title>
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="icon" href="../img/favicon.ico"> 
+  <link rel="stylesheet" href="perfil.css">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="icon" href="../img/favicon.ico"> 
 </head>
 
 <!-- Login 13 - Bootstrap Brain Component -->
@@ -18,39 +26,42 @@
                       <img src="../../../img/logo.jpg" alt="Granfest Logo" width="150" height="">
                   </a>
               </div>
-
-              <div class="row gy-2 overflow-hidden">
-                <div class="col-12">
-                  <div class="form-floating mb-3">
-                    Nome
-                    <input type="fname" class="form-control" name="name" placeholder=". $_SESSION['name'] .">
+              <form action="../db/login_model.inc.php" method="post">
+              <h1 class="fs-6 fw-normal text-center text-secondary mb-4">Perfil</h1>
+                <div class="row gy-2 overflow-hidden">
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      Nome
+                      <?php echo get_name($pdo, $_SESSION['user_username'])?>
+                      <input type="fname" class="form-control" name="name" value="<?php echo get_name($pdo, $_SESSION['user_username'])?>" placeholder="Nome">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      Username
+                      <input type="uname" class="form-control" name="username" value="<?php echo isset($_SESSION['user_username']) ? $_SESSION['user_username'] : 'None'; ?>" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      Email
+                      <input type="email" class="form-control" name="email" value="<?php echo isset($_SESSION['email']) ? $_SESSION['email'] : 'None'; ?>" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating mb-3">
+                      Password
+                      <input type="password" class="form-control" name="pwd" value="<?php echo isset($_SESSION['pwd']) ? $_SESSION['pwd'] : 'None'; ?>" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-grid my-3">
+                      <button class="btn btn-primary btn-lg" type="submit">Atualizar</button>
+                    </div>
                   </div>
                 </div>
-                <div class="col-12">
-                  <div class="form-floating mb-3">
-                    Username
-                    <input type="lname" class="form-control" name="username" placeholder="$_SESSION['username']">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating mb-3">
-                    Email
-                    <input type="email" class="form-control" name="email" placeholder="$_SESSION['email']">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating mb-3">
-                    Password
-                    <input type="password" class="form-control" name="pwd" value="" placeholder="$_SESSION['pwd']">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="d-grid my-3">
-                    <button class="btn btn-primary btn-lg" type="submit">Atualizar</button>
-                  </div>
-                </div>
-              </div>
-           </div>
+              </form>
+            </div>
          </div>
        </div>
     </div>
